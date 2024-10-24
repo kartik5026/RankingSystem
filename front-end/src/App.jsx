@@ -11,7 +11,7 @@ function App() {
 
   async function handleClick(e){
     e.preventDefault();
-    const res = await axios.post('http://localhost:3000/search',{query,value});
+    const res = await axios.post('https://company-project-1zmx.onrender.com/search',{query,value});
    
     console.log(res.data);
     setData(res.data);
